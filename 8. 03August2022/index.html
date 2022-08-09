@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input id="inputa" type="number"> 
+    <button onclick="Even()"> Button </button> 
+    <div id="box"></div> 
+    <br> 
+    <hr>
+    
+    <input id="l" type="number">  <br> 
+    <input id="r" type="number">  <br> 
+    <input id="k" type="number">  <br> 
+    <button onclick="Function2()"> Button </button> 
+    <div id="box1"></div>
+    <br> <hr> 
+    
+
+    <!-- <input id="inputb" type="number">  -->
+    <button onclick="Function3()"> Day name </button> 
+    <div id="box3"></div> 
+    <br> <hr>
+    
+    
+    
+    
+    
+    
+    <button onclick="Function4()"> Day name </button> 
+    <div id="box4" class="create"></div> 
+    <p id="demo" ondblclick="myFunction(2,4)">Hello</p>
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+
+        
+        document.querySelector("#demo").innerHTML = myFunction();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

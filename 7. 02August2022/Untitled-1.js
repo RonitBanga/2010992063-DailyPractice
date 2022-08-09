@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <script>
         // var price1 = 6;
         // var price2 = "5";
         // var price3 = 4;
@@ -55,17 +47,4 @@
             document.getElementById("demo").innerHTML = Boolean(10>9);
         }
         
-    </script>
-</head>
-<body>
-    <p id="demo">Hello</p>
-    <button onclick="fnClick()">Click</button>
-    <button onclick="fnClick_1()">Click_1</button>
     
-    <br>
-
-    N1 <input type="text" name="n1" id="n1" /><br>
-    N2 <input type="text" name="n1" id="n2" /><br>
-    
-</body>
-</html>
