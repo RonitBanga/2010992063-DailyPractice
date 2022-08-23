@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sample</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- <p id="p1"></p>
+    <p id="err"></p>
+    <script>
+        let a = 0;
+        a += 1;
+        try{
+            alertt("Hi");
+        }catch(err){
+            document.getElementById("err").innerHTML = err.message;
+        }
+       
+        a+=1;
+        document.getElementById("p1").innerHTML = a;
+
+    </script> -->
+    <!-- <input type="text"  name="n1" id="n1" placeholder="">
+    <button onclick="myFn()">click</button>
+    <p id="err"> </p>
+    <p id="demo"></p>
+    <script>
+        function myFn(){
+          try {
+            let a = document.getElementById("n1").value;
+            if(!isNaN(a)){
+                a= Number(a);
+                if(a<18){
+                    throw "Its too low";
+                }
+                if(a>60){
+                    throw "Its too high";
+                }
+                   
+            }else{
+                throw "It is not a number";
+            }            
+          }
+          catch (error){
+             document.getElementById("demo").innerHTML=error;    
+          }
+          
+
+        }
+    </script> -->
+    <p id="demo"></p>
+    <input type="text"  name="n1" id="n1" placeholder="">
+    <button onclick="myFn()">click</button>
+    <script>
+    var employees = [];
+    employees.push( {name:"George", age:32, retiredate:"March 12, 2014"} );
+    employees.push( {name:"Edward", age:17, retiredate:"June 2, 2023"} );
+    employees.push( {name:"Christine", age:58, retiredate:"December 20, 2036"} );
+    employees.push( {name:"Sarah", age:62, retiredate:"April 30, 2020"} );
+    employees.push( {name:"George", age:30, retiredate:"March 12, 2015"} );
+    employees.sort(function(a, b){
+        return a.age - b.age;
+    });
+
+    function myFn()
+    {
+        let a = document.getElementById("n1").value;
+        var n = employees.length;
+        var flag = false;
+        for (let i = 0; i < n; i++) {
+            if(employees[i].name===a){
+                flag = true;
+                document.getElementById('demo').innerHTML+= employees[i].name+" "+employees[i].age+" "+employees[i].retiredate +'\n'
+            }
+        }
+        if(!flag){
+            document.getElementById('demo').innerHTML = "Not found"
+        }
+    }
+    </script>
+</body>
+</html>
